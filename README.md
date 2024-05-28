@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project simulates trials using four different decision models (DDM, LCA-DDM, LCA, and NLB) and fits SINDy models to the simulated data. Each model can run single trials and trial-averaged models using the derived average coefficients. The project includes Python scripts and Jupyter notebooks to demonstrate how to run these simulations and analyze the results.
+This simulates trials using four different decision models (DDM, LCA-DDM, LCA, and NLB) and fits SINDy models to the simulated data. Each model can run single trials and trial-averaged models using the derived average coefficients. The project includes Python scripts and Jupyter notebooks to demonstrate how to run these simulations and analyze the results.
 
 ## Requirements
 
