@@ -25,6 +25,7 @@ This project simulates trials using four different decision models (DDM, LCA-DDM
     - `run_lcaddm.ipynb`
     - `run_lca.ipynb`
     - `run_nlb.ipynb`
+    - `figures.ipynb`
 - `requirements.txt`: Lists the Python packages and versions required for the project.
 - `README.md`: This file.
 
