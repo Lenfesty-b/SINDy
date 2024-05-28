@@ -1,5 +1,4 @@
 # Uncovering dynamical equations of stochastic decision models using data-driven SINDy algorithm
-# Decision Models Simulation
 
 ## Introduction
 
