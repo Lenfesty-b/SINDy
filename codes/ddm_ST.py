@@ -36,7 +36,7 @@ def simulate_trial(t, dt, A, c, z):
         x[p+1] = x[p] + (dt * A) + c * np.sqrt(dt) * np.random.randn()
         if abs(x[p]) >= z:
             return x[:p + 1], p * dt, int(x[p] >= z)
-    return None, 2, 2
+    return None, p*dt, 2
 
 def fit_sindy_model(x, t):
     """
@@ -77,7 +77,7 @@ def simulate_sindy(coefs, dt, c, z, t):
         # sim[h+1] = sim[h] + (dt * coefs[0] + (coefs[1] * sim[h]) + (coefs[2] * sim[h]**2)) + c * np.sqrt(dt) * np.random.randn()  # Polynomial order 2
         if abs(sim[h]) >= z:
             return sim[:h + 1], h * dt, int(sim[h] >= z)
-    return None, 2, 2
+    return None, h*dt, 2
 
 def sessionDDM(trials, signal):
     """
