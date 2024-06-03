@@ -24,7 +24,7 @@ def simulate_trial(t, dt, A, c, z):
         x[p+1] = x[p] + (dt * A) + c * np.sqrt(dt) * np.random.randn()
         if abs(x[p]) >= z:
             return x[:p + 1], p * dt, int(x[p] >= z)
-    return x, 2, 2  # No decision case
+    return x, p*dt, 2  # No decision case
 
 def simulate_sindy(coefs, dt, c, z, t):
     """
@@ -52,7 +52,7 @@ def simulate_sindy(coefs, dt, c, z, t):
         # sim[h+1] = sim[h] + (dt * coef[0] + (coef[1] * sim[h]) + (coef[2] * sim[h]**2)) + c * np.sqrt(dt) * np.random.randn()  # Polynomial order 2
         if abs(sim[h]) >= z:
             return sim[:h + 1], h * dt, int(sim[h] >= z)
-    return sim, 2, 2  # No decision case
+    return sim, h*dt, 2  # No decision case
 
 def sessionDDM(trials, signal, coefs, seedings):
     """
