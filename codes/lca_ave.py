@@ -136,7 +136,7 @@ def sessionLCA(trials, signal, coefs, seedings):
 # nt_var = [(trials, signal[i],coefs[i]) for i in len(signal)]
 # data=[]
 # for i in range(len(nt_var)):
-#     data.append(sessionDDM(nt_var[i]))
+#     data.append(sessionLCA(nt_var[i]))
 
 
 
