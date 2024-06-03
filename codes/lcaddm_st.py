@@ -159,7 +159,7 @@ def sessionLCADDM(trials, signal, seeding):
 ##single trial dataset##
 #WARNING this takes time to run#
 # trials = 10000
-# nt_var = [(trials, signal) for signal in np.arange(0.000, 0.041, 0.001)]
+# nt_var = [(trials, signal,2000) for signal in np.arange(0.000, 0.041, 0.001)]
 # data=[]
 # for i in range(len(nt_var)):
 #     data.append(sessionLCADDM(nt_var[i]))
