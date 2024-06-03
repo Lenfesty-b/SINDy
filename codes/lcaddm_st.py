@@ -44,7 +44,7 @@ def simulate_trial(t, dt, S1, S2, b, k, c, z):
         if x[p] >= z or y[p] >= z:
             return x[0:p + 1], y[0:p + 1], p * dt, int(x[p] >= z)
     
-    return None, None, 2, 2
+    return None, None, p*dt, 2
 
 def fit_sindy_model(x, t):
     """
@@ -95,7 +95,7 @@ def simulate_sindy(coefs, dt, c, z, t):
         if sim_x[h] >= z or sim_y[h] >= z:
             return sim_x[:h + 1], sim_y[:h + 1], h * dt, int(sim_x[h] >= z)
     
-    return None, None, 2, 2
+    return None, None, h*dt, 2
 
 def sessionLCADDM(trials, signal, seeding):
     """
