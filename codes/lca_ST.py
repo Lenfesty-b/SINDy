@@ -158,4 +158,4 @@ def sessionLCA(trials, signal):
 # nt_var = [(trials, signal) for signal in np.arange(0.000, 1.21, 0.03)]
 # data=[]
 # for i in range(len(nt_var)):
-#     data.append(sessionDDM(nt_var[i]))
+#     data.append(sessionLCA(nt_var[i]))
