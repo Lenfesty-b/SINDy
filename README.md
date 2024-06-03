@@ -44,6 +44,10 @@ To run the simulations, use the provided Jupyter notebooks in the `codes/` direc
     - Run the trial-averaged model using the trial average model.
     - Compare the performance of the trial-averaged model to the original decision over many trials.
 
+4. **Manuscript data generation**:
+    - Use the commented code at bottom of each single trial (ST) and trial average (ave) .py file.
+    - This will take quite a long time to run.
+
 ### Example Workflow
 
 #### Single Trial Simulation
