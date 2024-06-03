@@ -134,3 +134,11 @@ def sessionDDM(trials, signal):
                 sindy_data.append(sim)
 
     return coef_mat, choice_trials, sindy_choice, decision_time, sindy_dt, model_data, sindy_data
+
+##single trial dataset##
+#WARNING this takes time to run#
+# trials = 10000
+# nt_var = [(trials, signal) for signal in np.arange(0.000, 0.041, 0.001)]
+# data=[]
+# for i in range(len(nt_var)):
+#     data.append(sessionDDM(nt_var[i]))
