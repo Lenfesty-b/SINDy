@@ -150,7 +150,7 @@ def sessionSPB(trials, signal, seeding):
 ##single trial dataset##
 #WARNING this takes time to run#
 # trials = 10000
-# nt_var = [(trials, signal,0) for signal in np.arange(0.0000, 0.0081, 0.0002)]
+# nt_var = [(trials, signal,1000) for signal in np.arange(0.0000, 0.0081, 0.0002)]
 # data=[]
 # for i in range(len(nt_var)):
 #     data.append(sessionSPB(nt_var[i]))
