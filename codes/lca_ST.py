@@ -152,3 +152,10 @@ def sessionLCA(trials, signal):
                 sindy_data.append([sim_x, sim_y])
 
     return coef_mat, choice_trials, sindy_choice, decision_time, sindy_dt, model_data, sindy_data
+##single trial dataset##
+#WARNING this takes time to run#
+# trials = 10000
+# nt_var = [(trials, signal) for signal in np.arange(0.000, 1.21, 0.03)]
+# data=[]
+# for i in range(len(nt_var)):
+#     data.append(sessionDDM(nt_var[i]))
