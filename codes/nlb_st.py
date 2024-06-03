@@ -147,3 +147,10 @@ def sessionSPB(trials, signal, seeding):
             sindy_data.append(sim)
 
     return coef_mat, choice_trials, sindy_choice, decision_time, sindy_dt, model_data, sindy_data
+##single trial dataset##
+#WARNING this takes time to run#
+# trials = 10000
+# nt_var = [(trials, signal,0) for signal in np.arange(0.0000, 0.0081, 0.0002)]
+# data=[]
+# for i in range(len(nt_var)):
+#     data.append(sessionSPB(nt_var[i]))
