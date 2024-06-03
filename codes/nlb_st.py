@@ -40,7 +40,7 @@ def simulate_trial(t, dt, tauX, epsilon, b, c, z):
         x[p + 1] = x[p] + (dt / tauX) * ((epsilon * x[p]) + (x[p] ** 3) - (x[p] ** 5) + b) + c * np.sqrt(dt / tauX) * np.random.randn()
         if abs(x[p]) >= z:
             return x[:p + 1], p * dt, int(x[p] >= z)
-    return x, None, None
+    return x, p*dt, 2
 
 def fit_sindy_model(x, t, tauX):
     """
