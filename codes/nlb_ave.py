@@ -27,7 +27,7 @@ def simulate_trial(t, dt, tauX, epsilon, b, c, z):
         x[p + 1] = x[p] + (dt / tauX) * ((epsilon * x[p]) + (x[p] ** 3) - (x[p] ** 5) + b) + c * np.sqrt(dt / tauX) * np.random.randn()
         if abs(x[p]) >= z:
             return x[:p + 1], p * dt, int(x[p] >= z)
-    return None, 2, 2
+    return None, p*dt, 2
 
 
 def simulate_sindy(coefs, dt, tauX, c, z, t):
