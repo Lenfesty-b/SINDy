@@ -11,7 +11,7 @@ This simulates trials using four different decision models (DDM, LCA-DDM, LCA, a
 
 ## Directory Structure
 
-- `codes/`: Contains the Python scripts for each model used and Jupyter notebooks demonstrating how to run single trials, multiple trials, and view the results.
+- `codes/`: Contains the Python scripts for each model used and Jupyter notebooks demonstrating how to run single trials, trial-average parameter trials, multi-trials and view the results.
     - `ddm_st.py`
     - `ddm_ave.py`
     - `lcaddm_st.py`
@@ -24,7 +24,8 @@ This simulates trials using four different decision models (DDM, LCA-DDM, LCA, a
     - `run_lcaddm.ipynb`
     - `run_lca.ipynb`
     - `run_nlb.ipynb`
-    - `figures.ipynb`: Plots the figures from the manuscript
+    - `figures_revised.ipynb`: Plots the figures from the manuscript
+    - `SINDy_multi` : contains the codes for generating multi-trial resulsts
 - `requirements.txt`: Lists the Python packages and versions required for the project.
 - `README.md`: This file.
 
@@ -65,7 +66,7 @@ In the same notebook, you will:
 - Run the `sessionDDM` function to simulate multiple single trials and fit the SINDy model.
 - Print a summary of the results and plot sample trials to compare the DDM and SINDy models.
 
-#### Trial Averaged Model
+#### Trial averaged parameters Model
 
 Also in the same notebook, you will:
 - Use the coefficients obtained from multiple single trials.
@@ -73,6 +74,15 @@ Also in the same notebook, you will:
 - Print a summary of the results and plot sample trials to compare the trial-averaged model with the original DDM model.
 
 Repeat these steps for `run_lcaddm.ipynb`, `run_lca.ipynb`, and `run_nlb.ipynb`.
+
+#### Multi-trial Model
+
+For multi_trial :
+#### DDM, LCA-DDM and LCA
+- Use the {model}_run.py file to obtain the decision variable data and choice behaviour for each trial
+- Run {model}_multi.py to obtain the multi_trial models aswell as the decision variable data and choice behaviour for each trial for the SINDy model
+- 
+Warning that these take sometime to run and are computationally quite expensive
 
 ## Contact
 
