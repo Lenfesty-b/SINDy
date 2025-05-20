@@ -3,7 +3,7 @@ python-dateutil==2.8.2
 numpy==1.24.2
 six==1.16.0
 pandas==1.4.2
-setuptools==64.0.2
+
 pip==23.0
 packaging==23.0
 pillow==9.4.0
