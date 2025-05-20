@@ -6,7 +6,7 @@ pandas==1.4.2
 
 pip==23.0
 packaging==23.0
-pillow==9.4.0
+pillow==10.3.0
 importlib-resources==5.10.2
 fonttools==4.38.0
 cmake==3.25.2
